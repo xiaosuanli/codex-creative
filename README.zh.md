@@ -2,6 +2,8 @@
 
 **简体中文** · [English](README.md)
 
+官网：[www.xiaosuanli.com](https://www.xiaosuanli.com)
+
 **在 Codex 中通过对话生成、修改并导出 AI 视频。**
 
 一句创意、一篇故事或一段参考视频，都可以成为作品的起点。告诉 Codex 你想拍什么、需要什么画风和时长，再通过聊天推进制作和修改。

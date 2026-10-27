@@ -2,6 +2,8 @@
 
 [简体中文](README.zh.md) · **English**
 
+Website: [www.xiaosuanli.com](https://www.xiaosuanli.com)
+
 **Create, edit, and export AI videos through conversation in Codex.**
 
 Start with an idea, a story, or a reference video. Tell Codex what you want to make, the visual style, and the desired length, then develop and refine it through chat.
