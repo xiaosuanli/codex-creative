@@ -10,7 +10,7 @@
 
 > 安装 https://github.com/xiaosuanli/codex-creative/blob/master/xiaosuanli-director/SKILL.md，请安装该文件所在的完整 Skill 目录。
 
-安装后，按照 Codex 的提示完成必要的设置，就可以开始创作。你需要一个[小算狸账号](https://www.xiaosuanli.com)；图片和视频生成可能消耗积分或权益。
+安装后，按照 Codex 的提示完成必要的设置，就可以开始创作。Codex 会使用已有的 Python；如果没有，会提示你安装。你还需要一个[小算狸账号](https://www.xiaosuanli.com)；图片和视频生成可能消耗积分或权益。
 
 ## 你可以这样创作
 
