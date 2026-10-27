@@ -14,7 +14,7 @@ Send this message in a Codex conversation:
 
 > Install https://github.com/xiaosuanli/codex-creative/blob/master/xiaosuanli-director/SKILL.md, including the complete Skill directory, and configure the local Xiaosuanli MCP server.
 
-Codex sets up the local Xiaosuanli MCP server. Follow its prompts to connect and authorize your account. Codex uses an available Python installation and will ask you to install Python if none is available. You also need a [Xiaosuanli account](https://www.xiaosuanli.com); image and video generation may consume credits or account benefits.
+Codex sets up the local Xiaosuanli MCP server. Reload or restart when prompted, review and trust the Xiaosuanli message hooks in `/hooks`, and then connect your account. Codex uses an available Python installation and will ask you to install Python if none is available. You also need a [Xiaosuanli account](https://www.xiaosuanli.com); image and video generation may consume credits or account benefits.
 
 ## What you can create
 

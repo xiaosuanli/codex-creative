@@ -14,7 +14,7 @@
 
 > 安装 https://github.com/xiaosuanli/codex-creative/blob/master/xiaosuanli-director/SKILL.md，请安装完整 Skill 目录并配置本地小算狸 MCP。
 
-安装后，Codex 会配置本地小算狸 MCP；按照提示完成连接和授权，就可以开始创作。Codex 会使用已有的 Python；如果没有，会提示你安装。你还需要一个[小算狸账号](https://www.xiaosuanli.com)；图片和视频生成可能消耗积分或权益。
+安装后，Codex 会配置本地小算狸 MCP。按提示重新加载或重启，在 `/hooks` 中审阅并信任小算狸消息钩子，再完成账号授权，就可以开始创作。Codex 会使用已有的 Python；如果没有，会提示你安装。你还需要一个[小算狸账号](https://www.xiaosuanli.com)；图片和视频生成可能消耗积分或权益。
 
 ## 你可以这样创作
 
