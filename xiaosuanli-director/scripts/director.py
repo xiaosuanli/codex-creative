@@ -311,7 +311,7 @@ def psquote(value):
     return "'" + value.replace("'", "''") + "'"
 
 
-UTF8 = '$OutputEncoding = [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false)\n[Console]::InputEncoding = [System.Text.UTF8Encoding]::new($false)'
+UTF8 = "$OutputEncoding = [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false)\n[Console]::InputEncoding = [System.Text.UTF8Encoding]::new($false)\n$env:PYTHONIOENCODING = 'utf-8'"
 
 
 def hook_command(windows=False):
