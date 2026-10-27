@@ -1,31 +1,31 @@
-# Xiaosuanli Video Creation for Codex
+# 小算狸 Codex 视频创作
 
-[简体中文](README.zh.md) · **English**
+**简体中文** · [English](README.md)
 
-Website: [www.xiaosuanli.com](https://www.xiaosuanli.com)
+官网：[www.xiaosuanli.com](https://www.xiaosuanli.com)
 
-**Create, edit, and export AI videos through conversation in Codex.**
+**在 Codex 中通过对话生成、修改并导出 AI 视频。**
 
-Start with an idea, a story, or a reference video. Tell Codex what you want to make, the visual style, and the desired length, then develop and refine it through chat.
+一句创意、一篇故事或一段参考视频，都可以成为作品的起点。告诉 Codex 你想拍什么、需要什么画风和时长，再通过聊天推进制作和修改。
 
-## Install
+## 安装
 
-Send this message in a Codex conversation:
+在 Codex 对话中发送：
 
-> Install https://github.com/xiaosuanli/codex-creative/blob/master/xiaosuanli-director/SKILL.md, including the complete Skill directory containing that file.
+> 安装 https://github.com/xiaosuanli/codex-creative/blob/master/xiaosuanli-director/SKILL.md，请安装该文件所在的完整 Skill 目录。
 
-Follow the Codex prompts to complete setup. Codex uses an available Python installation and will ask you to install Python if none is available. You also need a [Xiaosuanli account](https://www.xiaosuanli.com); image and video generation may consume credits or account benefits.
+安装后，按照 Codex 的提示完成必要的设置，就可以开始创作。Codex 会使用已有的 Python；如果没有，会提示你安装。你还需要一个[小算狸账号](https://www.xiaosuanli.com)；图片和视频生成可能消耗积分或权益。
 
-## What you can create
+## 你可以这样创作
 
-| Your goal | What you can say to Codex |
+| 想做什么 | 可以对 Codex 说 |
 | --- | --- |
-| Create a short video | Make a 30-second science-fiction short in a realistic cinematic style. |
-| Turn a story or novel into a video | Condense this chapter into a two-minute animated short and keep the final twist. |
-| Create from a reference video | Use my uploaded video as a reference, keep the main story, and change the style to ink-wash animation. |
-| Edit an existing project | Change the second shot to a close-up and make the character sound more hesitant. |
-| Continue and export | Finish this chapter and export the complete video. |
+| 生成创意短片 | 帮我做一段 30 秒的科幻短片，写实电影风格。 |
+| 把故事或小说拍成视频 | 把这一章浓缩成两分钟的动画短片，保留结尾反转。 |
+| 参考视频再创作 | 参考我上传的视频，保留主要剧情，换成水墨动画。 |
+| 修改已有工程 | 把第二个镜头改成近景，人物语气更犹豫。 |
+| 继续制作并导出 | 继续完成这一章，导出完整视频。 |
 
-The first time you use it, Codex will guide you through connecting your account and choosing a project and chapter. If you don't have a project yet, say: “Create a project called My First Short Film.”
+第一次使用时，Codex 会引导你连接账号、选择工程和章节。没有工程时，也可以直接说“创建一个叫《我的第一部短片》的工程”。
 
-Your work is saved in your Xiaosuanli director project. You can open the editing link returned by Codex to continue making changes on the website. Each chapter accepts up to 20,000 characters of text, and reference videos must be 15–180 seconds long. Available capabilities depend on your account permissions and the results returned by the service.
+作品保存在小算狸导演工程中，你可以打开 Codex 返回的编辑链接，在网页上继续调整。单章文本最多 20,000 字，导入的参考视频为 15～180 秒；具体能力以账号权限和实际返回结果为准。
