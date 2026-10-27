@@ -9,9 +9,9 @@ description: 通过小算狸导演台将创意、故事或参考视频制作成�
 
 ## 接线与授权
 
-从 GitHub 安装时安装整个 `xiaosuanli-director` 目录及其引用文件，不能只复制本文件。使用 Node.js 22.19 及以上。首次使用先执行 `node <本 skill 目录>/scripts/setup-hooks.mjs`；脚本保留已有钩子，重复执行不会重复添加。若新增或更新了钩子，提示用户在 `/hooks` 审阅并信任，然后发送一条新消息。业务调用缺少消息上下文时停止，不编造或借用会话身份。
+从 GitHub 安装时安装整个 `xiaosuanli-director` 目录及其引用文件，不能只复制本文件。不要求用户安装运行时：在 `bin/` 中选择与 Codex 运行环境相匹配的程序（`darwin-arm64`、`darwin-amd64`、`linux-arm64`、`linux-amd64`、`windows-amd64.exe`），使用绝对路径；macOS/Linux 如缺少执行权限，由 Codex 为该文件添加执行权限。首次使用运行该程序的 `setup` 命令；它保留已有钩子，重复执行不会重复添加。若新增或更新了钩子，提示用户在 `/hooks` 审阅并信任，然后发送一条新消息。业务调用缺少消息上下文时停止，不编造或借用会话身份。
 
-业务命令为 `node <本 skill 目录>/scripts/connect.mjs codex <命令>`，脚本路径使用绝对路径。
+业务命令为 `<所选程序绝对路径> <命令>`。不安装其他编程环境；当前平台无匹配程序时说明情况。
 
 1. 用 `status` 查看连接。未连接时 `auth-start` 返回授权链接和 state，把链接发给用户，让其在浏览器登录授权并将一次性授权码发到当前对话。
 2. `auth-complete` 从 stdin 接收 JSON `{ "code": "一次性码", "state": "本次 state" }`。不回显授权码，不读取或展示本地凭据。成功后展示返回的工程目录。
