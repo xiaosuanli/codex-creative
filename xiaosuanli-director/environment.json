@@ -1,0 +1,5 @@
+{
+  "environment": "production",
+  "apiOrigin": "https://api.xiaosuanli.com",
+  "siteOrigin": "https://www.xiaosuanli.com"
+}
