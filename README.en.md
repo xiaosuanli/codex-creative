@@ -14,7 +14,13 @@ Send this message in a Codex conversation:
 
 > Install https://github.com/xiaosuanli/codex-creative/blob/master/xiaosuanli-director/SKILL.md, including the complete Skill directory, and configure the local Xiaosuanli MCP server.
 
-Codex sets up the local Xiaosuanli MCP server. Reload or restart when prompted, review and trust the Xiaosuanli message hooks in `/hooks`, and then connect your account. Codex uses an available Python installation and will ask you to install Python if none is available. You also need a [Xiaosuanli account](https://www.xiaosuanli.com); image and video generation may consume credits or account benefits.
+Codex sets up the local Xiaosuanli MCP server and guides you through connecting for the first time:
+
+1. Reload or restart Codex when prompted. Review and trust the Xiaosuanli message hooks in `/hooks`, then send a new message. You can use `/mcp` to check whether `xiaosuanli` is connected.
+2. Open the authorization link provided by Codex, sign in and confirm access, then send the one-time authorization code from the webpage back in the current conversation.
+3. Choose a project and chapter, then tell Codex what you want to create. If you don't have a project, you can ask Codex to create one.
+
+Codex uses an available Python installation and will ask you to install Python if none is available. You need a [Xiaosuanli account](https://www.xiaosuanli.com); image and video generation may consume credits or account benefits.
 
 ## What you can create
 
@@ -26,6 +32,6 @@ Codex sets up the local Xiaosuanli MCP server. Reload or restart when prompted, 
 | Edit an existing project | Change the second shot to a close-up and make the character sound more hesitant. |
 | Continue and export | Finish this chapter and export the complete video. |
 
-The first time you use it, Codex will guide you through connecting your account and choosing a project and chapter. If you don't have a project yet, say: “Create a project called My First Short Film.”
+For example, say: “Create a project called My First Short Film.”
 
 Your work is saved in your Xiaosuanli director project. You can open the editing link returned by Codex to continue making changes on the website. Each chapter accepts up to 20,000 characters of text, and reference videos must be 15–180 seconds long. Available capabilities depend on your account permissions and the results returned by the service.
