@@ -360,7 +360,7 @@ def setup():
                 groups.append(group | {'hooks': keep})
         new = {'hooks': [{'type': 'command', 'command': hook_command(), 'commandWindows': hook_command(True), 'timeout': 65}]}
         if event == 'PreToolUse':
-            new['matcher'] = '^(Bash|exec_command)$'
+            new['matcher'] = '^(Bash|exec_command|mcp__xiaosuanli__.*)$'
         hooks[event] = groups + [new]
     changed = before != json.dumps(config, ensure_ascii=False)
     if changed:
@@ -395,6 +395,15 @@ def handle_hook(data):
         return {'hookSpecificOutput': {'hookEventName': event, 'additionalContext': '小算狸已记录本条用户消息；业务调用使用随包工具。'}}
     if event != 'PreToolUse':
         return {}
+    tool_name = data.get('tool_name')
+    if isinstance(tool_name, str) and tool_name.startswith('mcp__xiaosuanli__'):
+        tool_input = data.get('tool_input')
+        if not isinstance(tool_input, dict):
+            raise ValueError('MCP 工具输入无效')
+        stored = client.store.get(key)
+        if not stored or stored.get('conversationId') != conversation or stored.get('userTurnId') != turn:
+            return {'hookSpecificOutput': {'hookEventName': event, 'permissionDecision': 'deny', 'permissionDecisionReason': '请先信任小算狸消息钩子并发送新消息。'}}
+        return {'hookSpecificOutput': {'hookEventName': event, 'permissionDecision': 'allow', 'updatedInput': tool_input | {'_codex_context': key}}}
     field = {'Bash': 'command', 'exec_command': 'cmd'}.get(data.get('tool_name'))
     tool_input = data.get('tool_input') or {}
     command = tool_input.get(field) if field else None

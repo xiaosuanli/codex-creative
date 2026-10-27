@@ -4,7 +4,7 @@
 
 官网：[www.xiaosuanli.com](https://www.xiaosuanli.com)
 
-**在 Codex 中通过对话生成、修改并导出 AI 视频。**
+**在 Codex 中通过本地 MCP 和对话生成、修改并导出 AI 视频。**
 
 一句创意、一篇故事或一段参考视频，都可以成为作品的起点。告诉 Codex 你想拍什么、需要什么画风和时长，再通过聊天推进制作和修改。
 
@@ -12,9 +12,9 @@
 
 在 Codex 对话中发送：
 
-> 安装 https://github.com/xiaosuanli/codex-creative/blob/master/xiaosuanli-director/SKILL.md，请安装该文件所在的完整 Skill 目录。
+> 安装 https://github.com/xiaosuanli/codex-creative/blob/master/xiaosuanli-director/SKILL.md，请安装完整 Skill 目录并配置本地小算狸 MCP。
 
-安装后，按照 Codex 的提示完成必要的设置，就可以开始创作。Codex 会使用已有的 Python；如果没有，会提示你安装。你还需要一个[小算狸账号](https://www.xiaosuanli.com)；图片和视频生成可能消耗积分或权益。
+安装后，Codex 会配置本地小算狸 MCP；按照提示完成连接和授权，就可以开始创作。Codex 会使用已有的 Python；如果没有，会提示你安装。你还需要一个[小算狸账号](https://www.xiaosuanli.com)；图片和视频生成可能消耗积分或权益。
 
 ## 你可以这样创作
 

@@ -4,7 +4,7 @@
 
 Website: [www.xiaosuanli.com](https://www.xiaosuanli.com)
 
-**Create, edit, and export AI videos through conversation in Codex.**
+**Create, edit, and export AI videos through conversation in Codex using a local MCP server.**
 
 Start with an idea, a story, or a reference video. Tell Codex what you want to make, the visual style, and the desired length, then develop and refine it through chat.
 
@@ -12,9 +12,9 @@ Start with an idea, a story, or a reference video. Tell Codex what you want to m
 
 Send this message in a Codex conversation:
 
-> Install https://github.com/xiaosuanli/codex-creative/blob/master/xiaosuanli-director/SKILL.md, including the complete Skill directory containing that file.
+> Install https://github.com/xiaosuanli/codex-creative/blob/master/xiaosuanli-director/SKILL.md, including the complete Skill directory, and configure the local Xiaosuanli MCP server.
 
-Follow the Codex prompts to complete setup. Codex uses an available Python installation and will ask you to install Python if none is available. You also need a [Xiaosuanli account](https://www.xiaosuanli.com); image and video generation may consume credits or account benefits.
+Codex sets up the local Xiaosuanli MCP server. Follow its prompts to connect and authorize your account. Codex uses an available Python installation and will ask you to install Python if none is available. You also need a [Xiaosuanli account](https://www.xiaosuanli.com); image and video generation may consume credits or account benefits.
 
 ## What you can create
 
