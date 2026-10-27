@@ -8,6 +8,12 @@
 
 > 安装 https://github.com/xiaosuanli/codex-creative/blob/master/xiaosuanli-director/SKILL.md
 
+也可以使用小算狸官网的安装入口，在 Codex 对话中发送：
+
+> 安装 https://www.xiaosuanli.com/skills/xiaosuanli-director/SKILL.md
+
+官网入口提供面向不同宿主的完整资源包，Codex 会按其中的 Codex 安装说明操作。选择其中一个入口安装即可。
+
 需要 Node.js 22.19 或更高版本和[小算狸账号](https://www.xiaosuanli.com)。Codex 会安装完整 skill；首次使用时配置消息钩子，并提示你在 `/hooks` 审阅和信任，然后发送一条新消息继续。
 
 ## 开始创作
