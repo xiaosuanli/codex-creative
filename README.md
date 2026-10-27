@@ -4,13 +4,11 @@
 
 ## 安装
 
-需要 Codex、Node.js 22.19 或更高版本，以及[小算狸账号](https://www.xiaosuanli.com)。下载或克隆本仓库后，在仓库目录运行：
+在 Codex 对话中发送：
 
-```sh
-node install.mjs
-```
+> 安装 https://github.com/xiaosuanli/codex-creative/blob/master/xiaosuanli-director/SKILL.md
 
-安装器将 skill 放入 `$CODEX_HOME/skills/xiaosuanli-director`（未设置时为 `~/.codex/skills/xiaosuanli-director`），并添加用于传递真实会话身份的 Codex 消息钩子。已有同名 skill 时安装器会停止，避免覆盖；如需更新，请先备份并移走旧目录。安装后在 Codex 的 `/hooks` 中审阅并信任小算狸钩子，再发送一条新消息。Windows 可以在 PowerShell 中运行同一命令。
+需要 Node.js 22.19 或更高版本和[小算狸账号](https://www.xiaosuanli.com)。Codex 会安装完整 skill；首次使用时配置消息钩子，并提示你在 `/hooks` 审阅和信任，然后发送一条新消息继续。
 
 ## 开始创作
 
