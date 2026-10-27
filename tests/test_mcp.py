@@ -26,7 +26,7 @@ class MCPTest(unittest.TestCase):
             {'jsonrpc': '2.0', 'id': 3, 'method': 'tools/call', 'params': {'name': 'execute', 'arguments': {'operation': 'project_get', 'arguments': {}}}},
         ]
         with tempfile.TemporaryDirectory() as root:
-            result = subprocess.run([sys.executable, str(scripts / 'mcp_server.py')], input=''.join(json.dumps(x) + '\n' for x in requests), text=True, capture_output=True, timeout=10, env=os.environ | {'XSL_DIRECTOR_STATE_DIR': root})
+            result = subprocess.run([sys.executable, str(scripts / 'mcp_server.py')], input=''.join(json.dumps(x) + '\n' for x in requests), text=True, encoding='utf-8', capture_output=True, timeout=10, env=os.environ | {'XSL_DIRECTOR_STATE_DIR': root, 'PYTHONIOENCODING': 'ascii'})
         self.assertEqual(result.returncode, 0, result.stderr)
         responses = {item['id']: item for item in map(json.loads, result.stdout.splitlines())}
         self.assertEqual(responses[1]['result']['protocolVersion'], '2025-06-18')
